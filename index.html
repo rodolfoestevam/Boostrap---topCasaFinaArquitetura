@@ -112,56 +112,104 @@
 		</figure>
 	</section>
 
+	<section class="container">
+		<section id="depoimentos">
 
-	<section id="depoimentos">
+			<h2 class="container titulo-depoimentos">Depoimentos de Clientes</h2>
 
-		<h2 class="container titulo-depoimentos">Depoimentos de Clientes</h2>
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
 
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<figure class="item active">
+						<img src="img/depoimentos/depoimento1.png" alt="Depoimento 1">
+						<figcaption class="carousel-caption">
+							<h3>Yuri Padilha</h3>
+							<p>Gostei muito e achei rápido o serviço.</p>
+						</figcaption>
+					</figure>
+					<figure class="item">
+						<img src="img/depoimentos/depoimento2.png" alt="Depoimento 2">
+						<figcaption class="carousel-caption">
+							<h3>Fernando Stafaneni</h3>
+							<p>Excelente trabalho.</p>
+						</figcaption>
+					</figure>
+					<figure class="item">
+						<img src="img/depoimentos/depoimento3.png" alt="Depoimento 3">
+						<figcaption class="carousel-caption">
+							<h3>Caio Sauzas</h3>
+							<p>Gostei, competência em primeiro lugar.</p>
+						</figcaption>
+					</figure>
+				</div>
 
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox">
-				<figure class="item active">
-					<img src="img/depoimentos/depoimento1.png" alt="Depoimento 1">
-					<figcaption class="carousel-caption">
-						<h3>Yuri Padilha</h3>
-						<p>Gostei muito e achei rápido o serviço.</p>
-					</figcaption>
-				</figure>
-				<figure class="item">
-					<img src="img/depoimentos/depoimento2.png" alt="Depoimento 2">
-					<figcaption class="carousel-caption">
-						<h3>Fernando Stafaneni</h3>
-						<p>Excelente trabalho.</p>
-					</figcaption>
-				</figure>
-				<figure class="item">
-					<img src="img/depoimentos/depoimento3.png" alt="Depoimento 3">
-					<figcaption class="carousel-caption">
-						<h3>Caio Sauzas</h3>
-						<p>Gostei, competência em primeiro lugar.</p>
-					</figcaption>
-				</figure>
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
+		</section>
+	</section>
 
-			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
+	<section class="container">
+		<h2 >Vídeo Institucional</h2>
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/i_3Py1Aygel* frameborder=*0* allowfullscreen"></iframe>
 		</div>
 	</section>
 
 
+	<div class="container">
+		<h2>Contato</h2>
+		<p>Entre em contato conosco</p>
+
+		<form>
+			<div class="form-group">
+				<label for="contato-name"> Nome:</label>
+				<input class="form-control" id="contato-name" type="text" placeholder="Seu nome">
+			</div>
+			<div class="form-group">
+				<label for="contato-email"> Email:</label>
+				<div class="input-group">
+					<div class="input-group-addon">@</div>
+					<input class="form-control" id="contato-email" type="text" placeholder="Email">
+				</div>
+			</div>
+				<div class="radio">
+					<label>
+						<input type="radio">
+						Pessoa Física
+					</label>
+				</div>
+
+				<div class="radio">
+					<label>
+						<input type="radio">
+						Pessoa Jurídica
+					</label>
+				</div>
+
+				<select class="contato-select form-control">
+					<option disabled selected>Tipo de Situação</option>
+					<option>Casa</option>
+					<option>Apartamento</option>
+					<option>Mansão</option>
+				</select>
+		</form>
+				<button class="btn btn-primary" type="submit">Enviar</button>
+	</section>
+	
 	<script src="jquery.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
