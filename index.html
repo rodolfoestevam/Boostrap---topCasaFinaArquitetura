@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/estilos.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
@@ -13,7 +13,8 @@
 			<div class="container">
 
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					 data-target="#collapse-navbar" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -33,18 +34,19 @@
 				</div>
 			</div>
 		</nav>
-
+	</header>
 		<div class="topCasaFina-banner">
 			    <h1>TopCasaFina Arquitetura</h1>
 			    <p>Projetando a casa dos sonhos desde 2000 A.C</p>
 					<a href="#contato" class="btn btn-primary btn-lg">Contate-nos agora</a>
 	    </div>
 
-	</header>
+
 
 	<section id="sobre-nos" class="container">
 		<h2>Sobre Nós</h2>
-		<img class="img-responsive" src="img/empresa.jpg" alt="">
+		<div class="row">
+		<img class="img-responsive col-sm-6" src="img/empresa.jpg" alt="">
 
 		<div class="panel-group" id="paineis-sobre">
 			<div class="panel panel-default">
@@ -75,14 +77,14 @@
 				<div class="panel-heading" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">
 					<h3 class="panel-title">Mais de 300 prêmios em design e em conforto.</h3>
 				</div>
-
+</div>
 				<div id="terceiro-paragrafo" class="collapse">
 					<div class="panel-body">
 						Mais de 5 milhões de clientes satisfeitos em todo o mundo.
 					</div>
 				</div>
 			</div>
-		</div>
+
 	</section>
 
 	<div class="jumbotron">
@@ -91,11 +93,13 @@
 			<p>Mais de 5 milhões de clientes satisfeitos em todo o mundo.</p>
 		</div>
 	</div>
+	</div>
 
 	<section id="nossos-projetos" class="container">
 		<h2>Nossos Projetos</h2>
 
-		<figure class="thumbnail">
+<div class="row">
+		<figure class="thumbnail col-sm-6">
 			<img src="img/projetos/casa-castelo.png" alt="">
 			<figcaption class="caption">
 				<h3>Casa Castelo</h3>
@@ -105,7 +109,7 @@
 			</figcaption>
 		</figure>
 
-		<figure class="thumbnail">
+		<figure class="thumbnail .colunas-2">
 			<img src="img/projetos/casa-lago.png" alt="">
 			<figcaption class="caption">
 				<h3>Casa Castelo</h3>
@@ -115,7 +119,7 @@
 			</figcaption>
 		</figure>
 
-		<figure class="thumbnail">
+		<figure class="thumbnail projetos-responsivos">
 			<img src="img/projetos/mercado-marapira.png" alt="">
 			<figcaption class="caption">
 				<h3>Casa Castelo</h3>
@@ -220,28 +224,31 @@
 					<input class="form-control" id="contato-email" type="text" placeholder="Email">
 				</div>
 			</div>
-			<div class="radio">
-				<label>
-					<input type="radio">
-					Pessoa Física
-				</label>
-			</div>
+			<div class="group-radio">
+				<div class="radio">
+					<label>
+						<input type="radio" name="tipo-pessoa" value="fisica" checked=>
+						Pessoa Física
+					</label>
+				</div>
 
-			<div class="radio">
+			<div class="radio" >
 				<label>
-					<input type="radio">
+					<input type="radio" name="tipo-pessoa" value="jurídica" checked>
 					Pessoa Jurídica
 				</label>
 			</div>
+		</div>
 
-			<select class="contato-select form-control">
-				<option disabled selected>Tipo de Situação</option>
+			<select class="contato-select form-control" name="tipo-solicitacao">
+				<option  value="" disabled selected>Tipo de Situação</option>
 				<option>Casa</option>
 				<option>Apartamento</option>
 				<option>Mansão</option>
 			</select>
 
 			<button class="btn btn-primary" type="submit">Enviar</button>
+
 		</form>
 	</section>
 
@@ -256,8 +263,9 @@
 			Email: contato.topcasafina@alura.com.br
 		</address>
 	</footer>
+
 	<script src="js/jquery.js"></script>
-	<script src="js/navbar-animation-fix.js"> </script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/navbar-animation-fix.js"> </script>
 </body>
 </html>
