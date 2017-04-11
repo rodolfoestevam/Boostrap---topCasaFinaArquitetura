@@ -1,3 +1,2 @@
-# Boostrap---topCasaFinaArquitetura
-Boostrap Alura
-Esse projeto é um acompanhamento do curso Boostrap Alura.
+# Boostrap--
+SPA using HTML, CSS and Bootstrap
