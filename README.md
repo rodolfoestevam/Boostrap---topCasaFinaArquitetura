@@ -1,2 +1,2 @@
 # Boostrap--
-SPA using HTML, CSS and Bootstrap
+* A SPA using HTML, CSS and Bootstrap
